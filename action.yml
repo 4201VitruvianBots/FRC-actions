@@ -2,10 +2,10 @@ name: 'FRC Build & Test'
 description: 'Automatically build and test your FRC robot projects'
 branding:
   icon: 'check-square'
-  color: 'purple'
-author: 'ewpratten'
+  color: 'green'
+author: 'jetpham'
 
-inputs: 
+inputs:
   build_mode:
     description: 'What should be run? One of: ["all", "build", "unit_test"]'
     default: 'all'
