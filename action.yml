@@ -1,5 +1,5 @@
-name: 'FRC Build & Test'
-description: 'Automatically build and test your FRC robot projects'
+name: 'Build'
+description: 'Automatically build FRC robot'
 branding:
   icon: 'check-square'
   color: 'green'

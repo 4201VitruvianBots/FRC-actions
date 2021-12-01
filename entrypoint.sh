@@ -8,7 +8,7 @@ chmod +x gradlew
 # Check for correct build command
 if [ "$1" = "build" ]; then
     echo "Running only build task"
-    ./gradlew build; echo $?
+    ./gradlew build; exit &?
 fi
 
 if [ "$1" = "unit_test" ]; then
