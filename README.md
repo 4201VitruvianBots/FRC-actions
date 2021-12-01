@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2-beta
     - name: FRC Build & Test
-      uses: ewpratten/FRC-actions@v1
+      uses: 4201VitruvianBots/FRC-actions@v1
       with:
         build_mode: 'all'
 ```
