@@ -8,7 +8,14 @@ chmod +x gradlew
 # Check for correct build command
 if [ "$1" = "build" ]; then
     echo "Running only build task"
-    ./gradlew build; gradlew_return_code=$?
+    gradlew_return_code=`./gradlew build`
+    echo ">>> $gradlew_return_code"
+    if [ "$gradlew_return_code" -eq "0" ]; then
+        echo "Gradle task succeeded."
+    else
+        echo "Gradle task failed."
+    fi
+
 fi
 
 if [ "$1" = "unit_test" ]; then
@@ -19,7 +26,14 @@ fi
 if [ "$1" = "all" ]; then
     echo "Running all tasks"
     ./gradlew test
-    ./gradlew build; gradlew_return_code=$?
+    gradlew_return_code=`./gradlew build`
+    echo ">>> $gradlew_return_code"
+    if [ "$gradlew_return_code" -eq "0" ]; then
+        echo "Gradle task succeeded."
+    else
+        echo "Gradle task failed."
+    fi
+
 fi
 
 # if [ "$1" = "x_simulation" ]; then
